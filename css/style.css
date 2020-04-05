@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    color: #000;
+    color: #313243;
     -webkit-font-smothing: antialiased;
     background-color: white;
 }
@@ -185,6 +185,8 @@ input::-webkit-input-placeholder {
 }
 
 .btn {
+    display: inline-block;
+    vertical-align: top;
     margin-left: 30px;
     padding: 14px 24px;
     border-radius: 5px;
@@ -214,9 +216,21 @@ input::-webkit-input-placeholder {
     background-color: #fcc302;
 }
 
+.btn--rounded {
+    border-radius: 30px;
+}
+
+.btn--rounded:hover {
+    border-radius: 30px;
+}
+
+.btn--long {
+    min-width: 200px;
+}
+
 .btn--yellow:hover {
     box-shadow: inset 0 0 0 3px #00bec9;
-    color: black;
+    color: #313243;
     border-radius: 5px;
     background-color: transparent;
 }
@@ -244,23 +258,36 @@ input::-webkit-input-placeholder {
     font-weight: 600;
 }
 
+.v-b-h--right {
+    text-align: right;
+}
+
 .video-block__text {
     margin: 10px 0;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 24px;
     line-height: 1.3;
-    color: #000;
+    color: #313243;
+}
+
+.v-b-t--right {
+    text-align: right;
 }
 
 .btn-video-block {
     padding: 20px 0;
 }
 
+.btn-v-b--right {
+    text-align: right;
+}
+
 .video__container {
     width: 50%;
     padding: 0 20px;
 }
+
 .video-container__inner {
     position: relative;
     width: 100%;
@@ -272,7 +299,16 @@ input::-webkit-input-placeholder {
     width: 252px;
     height: 206px;
     background: #fcc302;
+}
+
+.square--left {
     left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.square--right {
+    right: 0;
     bottom: 0;
     z-index: 1;
 }
@@ -280,6 +316,11 @@ input::-webkit-input-placeholder {
 .video__preview {
     position: absolute;
     right: 0;
+    z-index: 2;  
+}
+.video__preview--2 {
+    position: absolute;
+    left: 0;
     z-index: 2;  
 }
 
@@ -341,7 +382,7 @@ input::-webkit-input-placeholder {
 }
 
 .features__name:hover {
-    color: #000;
+    color: #313243;
 }
 
 .name__link {
@@ -353,4 +394,155 @@ input::-webkit-input-placeholder {
     text-align: center;
     font-size: 23px;
     line-height: 1.2;
+}
+
+/* friend 
+####################*/
+
+.friend {
+    width: 100%;
+    height: 1000px;
+    background: #fcc302; 
+}
+
+.friend__inner {
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.friend__title {
+    font-size: 55px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.friend__subtitle {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 50%;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.frd__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.friend__item {
+    margin-top: 50px;
+    width: 33.333%;
+    padding: 0 25px;
+}
+
+.friend__photo {
+    border: 5px solid white;
+    margin-bottom: 30px;
+}
+
+.friend__price {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.friend__btn {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+/* Team
+####################*/
+
+.team {
+    width: 100%;
+    height: 1000px;
+}
+
+.team__inner {
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.team__title {
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.team__subtitle {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 50%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.tm__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__item {
+    margin-top: 50px;
+    width: 33.333%;
+    padding: 0 25px;
+}
+
+.team__photo {
+    margin-bottom: 25px;
+}
+
+.team__name {
+    font-size: 30px;
+    text-align: center;
+}
+
+.team__spec {
+    font-size: 25px;
+    font-style: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Team
+####################*/
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social__item {
+    display: flex;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #daac00;
+    border-radius: 50px;
+
+    transition: 0.1s linear;
+}
+
+.social__item:hover {
+    background-color: #fcc302;
+    color: #313243;
 }
