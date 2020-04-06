@@ -546,3 +546,49 @@ input::-webkit-input-placeholder {
     background-color: #fcc302;
     color: #313243;
 }
+
+.achievements {
+    height: 575px;
+    background: url("../img/mukhtar-3.jpg");
+    background-size: cover;   
+}
+
+.achievments__inner {
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #fcc302;
+}
+
+.achievements__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.achievements__item {
+    margin-left: 200px;
+    text-align: center;
+}
+
+.achievements__item:first-child {
+    margin-left: 0px;
+}
+
+.achievements__photo {
+    margin-bottom: 30px;
+}
+
+.achivements__numbers {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.achievements__text {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+}
